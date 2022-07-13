@@ -1,0 +1,99 @@
+<!-- In HTML Comments are written like this -->
+<!-- They can all be removed for your apps -->
+<!doctype html> <!-- This first line tells browsers to expect modern standard html 5 -->
+<html lang="en-gb"> <!-- This is indicates the page is written in British English, useful for accessibility -->
+<meta charset="utf-8"> <!-- This indicates how the file is encoded. utf-8 is standard -->
+<title>2048</title> <!-- All pages need a title, this will be displayed in the browser's title bar -->
+<link rel="stylesheet" href="default.css"> <!-- Import style sheet – default.css -->
+<link rel="icon" href="./assets/favicon.png"> <!-- Import 'Favorites Icon' – favicon.png -->
+<script type="module" src="main.js"></script> <!-- Load the main script. Must be type="module". Have only one of these -->
+
+
+
+<!--
+<header>
+    <h1 id="title"> 2048</h1>
+    <a href="docs">API Documentation</a>
+</header>
+
+<header>
+    <h1 id="score_heading">Score:</h1>
+    <h2><span id="show_score">0</span></h2>
+</header>
+
+<main tabindex="-1">
+    <div id="game_board"></div>
+</main>
+
+<dialog id="result_dialog" tabindex="0" aria-label="Game over message">
+    <h2>Game Over</h2>
+    <div id="result_message">You lose!</div>
+    <div id="result_winner">You wins!</div>
+</dialog>
+
+
+  
+            
+        <div class="tile-container">
+        <div class="tile-row">
+            <div class="tile-cell"></div>
+            <div class="tile-cell"></div>
+            <div class="tile-cell"></div>
+            <div class="tile-cell"></div>
+          </div>
+          <div class="tile-row">
+            <div class="tile-cell"></div>
+            <div class="tile-cell"></div>
+            <div class="tile-cell"></div>
+            <div class="tile-cell"></div>
+          </div>
+          <div class="tile-row">
+            <div class="tile-cell"></div>
+            <div class="tile-cell"></div>
+            <div class="tile-cell"></div>
+            <div class="tile-cell"></div>
+          </div>
+          <div class="tile-row">
+            <div class="tile-cell"></div>
+            <div class="tile-cell"></div>
+            <div class="tile-cell"></div>
+            <div class="tile-cell"></div>
+          </div> 
+  
+      </div>
+      <div class="number-container">
+           
+    </div>
+-->
+
+<div class="container">
+    <div class="heading">
+      <h1 class="title">2048</h1>
+      <div class="score-container">0</div>
+      <h3><a href="./docs">API Documentation</a></h3>
+    </div>
+    
+    <p class="game-intro">Join the numbers and get to the <strong>2048 tile!</strong></p>
+  
+    <div class="game-container">
+      <div class="game-message">
+
+        <div class="lower">
+          <a class="start-button">Start</a>
+        </div>
+      </div>
+  
+      <main tabindex="-1">
+        <div id="board" class = "board"></div>
+    </div>
+    </main>
+    <p class="game-explanation">
+      <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same number touch, they <strong>merge into one!</strong>
+    </p>
+
+    <dialog id="result_dialog" tabindex="0" aria-label="Game over message">
+        <h2>Game Over</h2>
+        <div id="result_message">You lose!</div>
+        <div id="result_message2">Final Score:</div>
+        <div id="score-container">0</div>
+    </dialog>
